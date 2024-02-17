@@ -1,9 +1,9 @@
-import About from './Pages/About';
-import HomePage from './Pages/HomePage';
-import Skills from './Pages/Skills';
-import Contact from './Pages/Conntact';
-import Resume from './Pages/Resume';
-import Portfolio from './Pages/Portfolio';
+import About from '../About';
+import HomePage from '../HomePage';
+import Skills from '../Skills';
+import Contact from '../Contact';
+import Resume from '../Resume';
+import Portfolio from '../Portfolio';
 
 
 function Home() {
