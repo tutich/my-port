@@ -1,7 +1,7 @@
 import { Animate } from "react-simple-animate";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faLinkedin, faGithub, faInstagram, faWhatsapp, } from '@fortawesome/free-brands-svg-icons';
-import Mail from '../images/mail-142.svg'
+import Mail from '../images/icons8-gmail-login-40.png';
 
 function Contact() {
     return (
@@ -25,6 +25,7 @@ function Contact() {
                     ></textarea>
                     <input
                     type="Submit"
+                    placeholder="SUBMIT"
                     />
                 </form>
             </div>
@@ -41,11 +42,11 @@ function Contact() {
                 }}
                 >
                     <a className='mail' href='https://mail.google.com/mail/u/0/#inbox'><img className='mail' src={Mail} size="2x"/></a>
-                    <a className='insta' href='https://web.whatsapp.com/'><FontAwesomeIcon icon={faWhatsapp} size="2x" /></a>
-                    <a className='insta' href='https://www.instagram.com/'><FontAwesomeIcon icon={faInstagram} size="2x" /></a>
-                    <a className='insta' href='https://twitter.com/home'><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
-                    <a className='insta' href='https://www.linkedin.com'><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
-                    <a className='insta' href='https://github.com/tutich'><FontAwesomeIcon icon={faGithub} size="2x" /></a>
+                    <a className='insta' href='https://web.whatsapp.com/'><FontAwesomeIcon className="insta" icon={faWhatsapp} size="2x" /></a>
+                    <a className='insta' href='https://www.instagram.com/'><FontAwesomeIcon className="insta" icon={faInstagram} size="2x" /></a>
+                    <a className='insta' href='https://twitter.com/home'><FontAwesomeIcon className="insta" icon={faTwitter} size="2x" /></a>
+                    <a className='insta' href='https://www.linkedin.com'><FontAwesomeIcon className="insta" icon={faLinkedin} size="2x" /></a>
+                    <a className='insta' href='https://github.com/tutich'><FontAwesomeIcon className="insta" icon={faGithub} size="2x" /></a>
                    
                 </Animate>
             </div>
