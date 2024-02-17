@@ -60,9 +60,34 @@ ul {
   display: none;
   color: #fff;
 }
+h2 {
+  color: #4db5ff;
+}
+.aboutdes {
+  background: rgba(77, 181, 255, 0.4);;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 40%;
+  padding: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 .resum {
   background: #2c2c6c;
   color: #fff;
+}
+.skill {
+  display: grid;
+  grid-auto-flow: column;
+  width: 90%;
+  padding: 14px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .mail {
   width: 30px;
@@ -83,7 +108,7 @@ ul {
     transition: all 0.4 ease;
 
     &.active {
-      background: #2c2c6c;
+      background: #fff;
       opacity: 1;
       left: 0px;
       top: 40px;
