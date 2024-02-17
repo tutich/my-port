@@ -16,6 +16,8 @@
 
 
 body {
+  background: #1f1f38;
+  
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -29,11 +31,69 @@ code {
     monospace;
 }
 .nav {
-  
+  display: flex;
+  align-items: center;
+  gap: 42.667px;
+  text-decoration: none;
+  padding: 15px 85.333px;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-
+.pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #4db5ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 42.667px;
+  text-decoration: none;
+  align-items: ;
+}
+.nav-icon {
+  display: none;
+  color: #fff;
+}
+.resum {
+  background: #2c2c6c;
+  color: #fff;
+}
 .mail {
   width: 30px;
   height: 30px;
 }
 
+@media only screen and (max-width : 768px) {
+  .dataa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+   
+    top: 20px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.4 ease;
+
+    &.active {
+      background: #2c2c6c;
+      opacity: 1;
+      left: 0px;
+      top: 40px;
+    }
+    li {
+      color: #fff;
+    }
+  }
+
+  .nav-icon {
+    display: block;
+  }
+}

@@ -22,8 +22,9 @@ function HomePage () {
                  }}
 
                 >
-                  <button className='resum'>Download my Resume</button>
+                  
                 </Animate>
+                <button className='resum'>Download my Resume</button>
               </div>
             </div>
           </div>

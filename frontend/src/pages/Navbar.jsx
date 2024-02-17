@@ -58,7 +58,7 @@ const handleToggleIcon = () => {
             
             <nav className="nav">
             
-              <div className="aboutpic"><img src={aboutPic}/></div>        
+              <div className="aboutpic"><img className="pic" src={aboutPic}/></div>        
                 <ul className={`dataa ${toggleIcon ? "active" : ""}`}>
                     {
                         data.map((item, key) => (
