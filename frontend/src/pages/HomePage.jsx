@@ -1,5 +1,6 @@
 import React from 'react';
 import { Animate } from "react-simple-animate";
+import Mail from '../images/icons8-gmail-login-40.png';
 
 
 function HomePage () {
@@ -24,7 +25,10 @@ function HomePage () {
                 >
                   
                 </Animate>
-                <button className='resum'>Download my Resume</button>
+                <div className='page'>
+                    <button className='resum'>Download my Resume</button>
+                    <a className='mail' href='https://mail.google.com/mail/u/0/#inbox'><img className='mail' src={Mail} size="2x"/></a>
+                </div>
               </div>
             </div>
           </div>

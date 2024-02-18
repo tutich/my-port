@@ -5,6 +5,8 @@ import {HiX, hiX} from 'react-icons/hi'
 import { useState } from "react";
 import homPic from '../images/20231221_212926.jpg'
 import aboutPic from '../images/20231221_212926.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faLinkedin, faGithub, faInstagram, faWhatsapp, } from '@fortawesome/free-brands-svg-icons'
 
 const data = [
     {
@@ -58,7 +60,8 @@ const handleToggleIcon = () => {
             
             <nav className="nav">
             
-              <div className="aboutpic"><img className="pic" src={aboutPic}/></div>        
+              <div className="aboutpic"><img className="pic" src={aboutPic}/></div> 
+              <a className='insta' href='https://github.com/tutich'><FontAwesomeIcon className="insta" icon={faGithub} size="2x" /></a>
                 <ul className={`dataa ${toggleIcon ? "active" : ""}`}>
                     {
                         data.map((item, key) => (

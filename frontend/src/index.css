@@ -40,7 +40,37 @@ code {
   top: 0;
   left: 0;
   right: 0;
+  position: sticky;
 }
+nav a {
+  text-decoration: none; /* Remove underline */
+  margin-right: 15px; /* Adjust spacing between links */
+  padding: 0.5rem;
+  color: #fff;
+}
+nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: transparent;
+  transition: all 0.4s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+  background: #4db5ff;
+}
+
+.dataa {
+  display: flex;
+  /* justify-content: space-between; */
+  list-style-type: none;
+  padding: 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
 .pic {
   width: 40px;
   height: 40px;
@@ -60,6 +90,12 @@ ul {
   display: none;
   color: #fff;
 }
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
 h2 {
   color: #4db5ff;
 }
@@ -70,13 +106,24 @@ h2 {
   border-radius: 10px;
   margin: 0 auto;
   width: 40%;
-  padding: 8px;
+  padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-.resum {
-  background: #2c2c6c;
+.abt {
   color: #fff;
 }
+.resum {
+  background: rgba(77, 181, 255, 0.4);
+  color: hsl(0, 0%, 100%);
+  padding: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.resum:hover {
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
 .skill {
   display: grid;
   grid-auto-flow: column;
@@ -95,7 +142,7 @@ form {
   grid-auto-flow: row;
   width: 30%;
   margin: 0 auto;
-  padding: 30px;
+  padding: 20px;
 }
 input {
   padding: 10px;
@@ -143,9 +190,18 @@ a {
   text-align: center;
 }
 .linkss {
-  padding: 4px;
+  padding-bottom: 10px;
   text-align: center;
 }
+
+.hom {
+  padding: 40px 30.333px 40.333px;
+}
+
+.skills {
+  padding: 40.333px 30.333px 40.333px;
+}
+
 
 @media only screen and (max-width : 768px) {
   .dataa {

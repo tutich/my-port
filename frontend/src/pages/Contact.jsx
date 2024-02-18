@@ -5,8 +5,8 @@ import Mail from '../images/icons8-gmail-login-40.png';
 
 function Contact() {
     return (
-        <>
-        <h2>Let's Talk</h2>
+        <div>
+          <h2>Let's Talk</h2>
             <div>
                 <form action="">
                     <input
@@ -50,7 +50,7 @@ function Contact() {
                    
                 </Animate>
             </div>
-        </>
+        </div>
     )
 }
 export default Contact;
