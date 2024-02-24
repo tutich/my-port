@@ -30,7 +30,7 @@ function Contact() {
     return (
         <div>
           <h2>Let's Talk</h2>
-            <div>
+            <div className="form">
                 <form action="" ref={form} onSubmit={sendEmail} >
                     <input
                     placeholder="Name"

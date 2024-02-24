@@ -203,6 +203,7 @@ a {
 }
 
 
+
 @media only screen and (max-width : 768px) {
   .dataa {
     display: flex;
@@ -217,7 +218,7 @@ a {
     transition: all 0.4 ease;
 
     &.active {
-      background: #fff;
+      background: #2c2c6c;
       opacity: 1;
       left: 0px;
       top: 40px;
@@ -230,4 +231,23 @@ a {
   .nav-icon {
     display: block;
   }
+  .aboutpic {
+    left: 2em;
+  }
+  .form {
+    justify-content: center;
+    align-items: center;
+    margin-right: 6em;
+  }
+  .aboutdes {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .skill {
+    display: flex;
+   flex-direction: column;
+  }
+
+
 }
