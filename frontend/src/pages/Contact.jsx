@@ -2,30 +2,57 @@ import { Animate } from "react-simple-animate";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faLinkedin, faGithub, faInstagram, faWhatsapp, } from '@fortawesome/free-brands-svg-icons';
 import Mail from '../images/icons8-gmail-login-40.png';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 function Contact() {
+
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_i5fbz4o', 'template_tv2jsyp', form.current, {
+        publicKey: 'toDj4akleujPDpgfP',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
     return (
         <div>
           <h2>Let's Talk</h2>
             <div>
-                <form action="">
+                <form action="" ref={form} onSubmit={sendEmail} >
                     <input
                     placeholder="Name"
                     type="text"
                     className='name'
+                    name="user_name"
                     />
                     <input
                     placeholder="Email"
                     type="email"
+                    name="user_email"
                     />
                     <textarea
                     placeholder="Say Something"
                     type="text"
                     rows="10" cols="40"
+                    name="message"
                     ></textarea>
                     <input
                     type="Submit"
                     placeholder="SUBMIT"
+                    value="SUBMIT"
                     />
                 </form>
             </div>

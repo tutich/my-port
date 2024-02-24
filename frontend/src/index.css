@@ -106,7 +106,7 @@ h2 {
   border-radius: 10px;
   margin: 0 auto;
   width: 40%;
-  padding: 20px;
+  padding: 40px 30.333px 40.333px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .abt {
@@ -190,7 +190,7 @@ a {
   text-align: center;
 }
 .linkss {
-  padding-bottom: 10px;
+  margin-bottom: 2em;
   text-align: center;
 }
 
