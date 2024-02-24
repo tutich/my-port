@@ -55,6 +55,10 @@ const handleToggleIcon = () => {
 
  };
 
+ const handleLinkClick = () => {
+    setToggleIcon(false);
+  };
+
     return (
         <div>
             
@@ -66,7 +70,7 @@ const handleToggleIcon = () => {
                     {
                         data.map((item, key) => (
                             <li key={key}>
-                                <Link to={item.to}>
+                                <Link to={item.to} onClick={handleLinkClick} >
                                     {item.label}
                                 </Link>
                             </li>

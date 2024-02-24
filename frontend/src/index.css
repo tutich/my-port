@@ -232,7 +232,7 @@ a {
     display: block;
   }
   .aboutpic {
-    left: 2em;
+    
   }
   .form {
     justify-content: center;
@@ -242,8 +242,12 @@ a {
   .aboutdes {
     width: 90%;
     margin: 0 auto;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
   }
-
+  .skills {
+    width: ;
+  }
   .skill {
     display: flex;
    flex-direction: column;
