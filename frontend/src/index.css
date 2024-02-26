@@ -202,6 +202,60 @@ a {
   padding: 40.333px 30.333px 40.333px;
 }
 
+.typing-animation {
+  overflow: hidden;
+  /* border-right: .15em solid orange;  */
+  white-space: nowrap; /* Keep the text in one line */
+  margin: 0 auto; /* Center the text */
+  animation: typing 10s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.portfolio-container {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+  flex-wrap: wrap;
+}
+
+.project {
+  flex-basis: calc(33.33% - 20px); /* Adjust as needed */
+  margin-bottom: 20px; /* Adjust spacing between rows */
+}
+
+.project-image {
+  width: 90%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 4px;
+}
+
+.project-image:hover {
+  transform: scale(1.1);
+}
+
+.project-info {
+  text-align: center;
+}
+
+.project-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.project-links {
+  margin-top: 5px;
+}
+
+.project-links a {
+  margin-right: 10px;
+  
+  color: rgba(77, 181, 255, 0.4);
+  text-decoration: none;
+}
+.myport {
+  color: #4db5ff;
+  padding: 10px;
+}
 
 
 @media only screen and (max-width : 768px) {
@@ -252,6 +306,21 @@ a {
     display: flex;
    flex-direction: column;
   }
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+  }
 
 
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }

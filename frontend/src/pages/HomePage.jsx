@@ -8,8 +8,8 @@ function HomePage () {
         <>
         <div class="hom">
             <div class="intro">
-              <h2>Hey, I'm Peter.</h2>
-              <h2>Front End Developer</h2>
+              <h2 class="typing-animation">Hey, I'm Peter.</h2>
+              <h2 class="typing-animation">Front End Developer</h2>
               <div className='btns'>
                 <Animate
                  play
