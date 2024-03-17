@@ -1,26 +1,32 @@
 
 import React from 'react';
-import image1 from '../dataimg/tipCalc.png';
+import image1 from '../dataimg/easybank.png';
 
 
 const data = [
     {
-        title: "Tip Calculator",
+        title: "Easybank Landing Page",
         image: image1,
-        liveLink: "https://tip-calc-indol.vercel.app/",
-        githubLink:"https://github.com/tutich/tip-calc",
+        liveLink: "https://landingpage-f63de.web.app/",
+        githubLink:"https://github.com/tutich/landingpage",
     },
     {
-        title: "Sign-Up Page",
-        image: require('../dataimg/intSignUp.png'),
-        liveLink: "https://int-sig.vercel.app/",
-        githubLink:"https://github.com/tutich/int-sig",
+        title: "Movie Database",
+        image: require('../dataimg/movieDB.png'),
+        liveLink: "https://moviedb-8eee9.web.app/home",
+        githubLink:"https://github.com/tutich/movie",
     },
     {
-        title: "Fitness Tracker",
-        image: require('../dataimg/fitnessTracker.png'),
-        liveLink: "https://jsc-sabw.vercel.app/",
-        githubLink:"https://github.com/tutich/jsc.",
+        title: "Shoe Hub e-commmerce",
+        image: require('../dataimg/ShoeHub.png'),
+        liveLink: "https://shoehub-331a6.web.app/",
+        githubLink:"https://github.com/tutich/shoeHub",
+    },
+    {
+        title: "Weather App",
+        image: require('../dataimg/weatherApp.png'),
+        liveLink: "https://weatherapp-c53ee.web.app/",
+        githubLink:"https://github.com/tutich/weather",
     }
 ];
 

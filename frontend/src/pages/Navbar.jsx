@@ -65,7 +65,7 @@ const handleToggleIcon = () => {
             <nav className="nav">
             
               <div className="aboutpic"><img className="pic" src={aboutPic}/></div> 
-              <a className='insta' href='https://github.com/tutich'><FontAwesomeIcon className="insta" icon={faGithub} size="2x" /></a>
+              <a className='insta-git' href='https://github.com/tutich'><FontAwesomeIcon className="insta" icon={faGithub} size="2x" /></a>
                 <ul className={`dataa ${toggleIcon ? "active" : ""}`}>
                     {
                         data.map((item, key) => (
